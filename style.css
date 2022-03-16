@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --color--branca-:#fff;
+    --color--gray-:#222;
+}
+
+/* ----toda parte do header ----       --------    nss eponto falta escolher a cor do hover para o header ----*/    
+
+
+/* -------primeiro parte do header */
+#main-header .div-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    min-height: 50px;
+    align-items: center;
+}
+#main-header .div-header .contatos {
+    display: flex;
+    gap: 20px;
+    width: 50%;
+    justify-content: center;
+}
+#main-header .div-header .contatos  .span-contatos .fa-envelope , .fa-whatsapp {
+    color: var(--color--branca-);
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#main-header .div-header .contatos  .span-contato .a-contatos {
+    color: var(--color--branca-);
+    text-decoration: none;
+}
+#main-header .div-header .contatos  .span-contatos .a-contatos {
+     color: var(--color--branca-);
+     text-decoration: none;
+}
+#main-header .carrinhos {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+#main-header .carrinhos .ul-carrinhos {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+#main-header .carrinhos .ul-carrinhos .a-carrinhos {
+    color: var(--color--branca-);
+    text-decoration: none;
+    margin-left: 20px;
+}
+/* ------- fim da primeiro parte do header */
+
+
+/* ------- inicio da segunda parte do header */
+
+.div-header-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-header-2 .logo {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+}
+.div-header-2 .procura-header-2 {
+    flex: 2;
+    height: 40px;
+    display: flex;
+    justify-content:start;
+}
+
+.div-header-2 .procura-header-2 label  {
+    padding: 10px 20px;
+   border: 1px solid rgba(2, 2, 2, 0.2);
+}
+.div-header-2 .procura-header-2 input {
+    width:300px;
+    height: 40px;
+    border: 1px solid rgba(2, 2, 2, 0.2);
+    outline: none;
+    font-size: 17px;
+}
+.div-header-2 .procura-header-2 button {
+    height: 100%;
+    width: 100px;
+    
+}
+.div-header-2 .desejos {
+    display: flex;
+}
+.div-header-2 .desejos .cart{
+    display: flex;
+    width: 150px;
+    align-items: center ;
+    gap: 5px;
+}
+.div-header-2 .desejos .cart a {
+    text-decoration: none;
+    color: #222;    
+}
+#icon-cart {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    color: #222;
+}
+
+/* ----fim da  parte do header -----*/
+
+.toggle-font{
+    font-size: large;
+}
+.toggle-font1{
+    font-size: x-large;
+}
+.toggle-font2{
+    font-size: xx-large;
+}
+#texto {
+    font-size: 15px;
+}
