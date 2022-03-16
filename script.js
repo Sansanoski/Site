@@ -81,33 +81,30 @@
      
  }
  
+ // funcao para a brir o drop down d apromocao 
+ 
+ const promocao = document.getElementById('promocoes')
+ function dropdown (){
+     if(promocao.style.display == 'none'){
+         promocao.style.display = 'flex'
+     }else {
+         promocao.style.display = 'none'
+     }
+ 
+ }
  
  
  
+ /////// funcao para abriri e fechar o saiba mais 
  
- ///function changeSizeBySlider(){
- ///    let texto = document.getElementById('texto')
- ///    var slider1 = document.getElementById('slider').value
- ///    for(let i  =  0 ; i < texto.length ; i++){
- ///        if(texto[i].style.fontSize){
- ///          const t =   parseInt(texto.style.fontSize.replace("px",""))
- ///        }
- ///        else {
- ///             t = 12 
- ///        }
- ///        if (t != max ){
- ///            t += 1
- ///        }
- ///        else {
- ///            texto[i].style.fontSize = t + 'px'
- ///        }
- ///    }
- ///
- ///
- ///    let valor = parseInt(texto.style.fontSize.replace("px",""))
- ///     valor = slider1
- ///
- ///     console.log(valor)
- ///}
+ const saiba = document.getElementById('saiba-mais')
  
+ function fecharSaibaMais(){
+     if(saiba.style.display == 'none'){
+         saiba.style.display = 'block'
+     }
+     else{
+         saiba.style.display = 'none'
+     }
+ }
  

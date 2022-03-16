@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a956664dda.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <script src="https://kit.fontawesome.com/a956664dda.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -14,6 +12,15 @@
 
     <header id="main-header">
         <div class="div-header">
+            <div id="acessivel">
+                <img  id="icon-acessivel"src="data:image/png;base64,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" alt="icone para mudança abrir menu de acessibilidade">
+                <nav id="nav-acessibilidade">
+                    <ul id="ul-acessibilidade">
+                        <li><p  id="aumentaFont"  onclick="aumentar()" href="#"> A+</p></li>
+                        <li><p  id="aumentaFont"  onclick="diminuir()" href="#"> A-</p></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="contatos">
                 <span class="span-contatos"><i class="fa-solid fa-envelope"></i><a class="a-contatos" href="mailto:">contato@games.com.br</a></span>
                 <span class="span-contatos"><i class="fa-brands fa-whatsapp"></i> <a class="a-contatos" href="tel:+">+55 13 9993-99987</a></span>
@@ -23,7 +30,6 @@
                     <ul class="ul-carrinhos">
                         <li><a class="a-carrinhos" href="#">Minha Conta</a></li>
                         <li><a class="a-carrinhos" href="#">Aconpanhe seu Pedido</a></li>
-                        <li><a class="a-carrinhos" href="#">Loja</a></li>
                     </ul>
                 </nav>
             </div>
@@ -42,30 +48,89 @@
                     <button type="submit">PESQUISA</button>
                 </div>
             </div>
-            <div class="desejos">
-                <div class="cart">
-                    <img  id="icon-cart"src="https://cdn3.iconfinder.com/data/icons/shopping-auxiliary-icons-set-2/512/Shopping_Bag_Heart-512.png" alt="">
-                    <span><a href="#">Desenhos</a></span>
-                </div>
-                <div class="cart">
-                    <img  id="icon-cart"src="https://cdn-icons-png.flaticon.com/512/263/263142.png"alt="">
-                    <span><a href="#">Carrinho</a></span>
+        </div>
+        <div class="header-3">
+            <div class="div-header-3">
+                <nav class="nav-header-3">
+                    <ul id="ul-header-3">
+                        <li><a class="a-header-3"href="#">HOME</a></li>
+                        <li><a class="a-header-3"href="#">LOJA</a></li>
+                        <li><a onclick="dropdown()" class="a-header-3"href="#">PROMOCAO</a>
+                            <ul class="" id="promocoes" >
+                                <li><a href="#">NoteBook</a></li>
+                                <li><a href="#">Perifericos</a></li>
+                                <li><a href="#">Memorias RAM</a></li>
+                                <li><a href="#">Memorias SSD</a></li>
+                                <li><a href="#">Cadeiras Gamer</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="a-header-3"href="#">FAQ</a></li>
+                        <li><a class="a-header-3"href="#">RECLAMACOES</a></li>
+                    </ul>
+                </nav>
+                <div class="desejos">
+                    <div class="cart">
+                        <img  id="icon-cart"src="https://cdn3.iconfinder.com/data/icons/shopping-auxiliary-icons-set-2/512/Shopping_Bag_Heart-512.png" alt="">
+                        <span><a href="#">Desenhos</a></span>
+                    </div>
+                    <div class="cart">
+                        <img  id="icon-cart"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGd2sjxFQjvIeJHrB6h01ODTyCuzYmEwvy1w&usqp=CAU"alt="">
+                        <span><a href="#">Carrinho</a></span>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <div>
-        <p  id="aumentar1"  onclick="aumentar()" href="#"> A+</p>
-        <p  id="aumentar1"  onclick="diminuir()" href="#"> A-</p>
+    <main>
+        <section id="apresentacao-section">
+            <div class="apresentacao">
+                <h1 id="apresentacao-h1">PC GAMER</h1>
+                <p id="aprensentacao-texto">Atualmente, os novos consoles de videogame podem estar na moda. No entanto, para muitas pessoas, a melhor maneira de jogar ainda é com o teclado e o mouse. Assim, os jogos para computador estão mais populares do que nunca. Isso se deve, sobretudo, graças às ótimas opções de <strong>PC Gamer</strong> disponíveis no mercado, que são capazes de reproduzir os títulos mais famosos nas suas melhores e mais otimizadas configurações.</p>
+                &#10142;<a id="btn-saiba-mais" href="#" onclick="fecharSaibaMais()">Saiba Mais </a>
+            </div>
+            <div class="" id="saiba-mais">
 
-        <p id="texto" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nihil quam tempora voluptatibus consectetur dicta, id doloribus voluptatum quas maiores nobis enim temporibus! Dolore, animi. Commodi architecto quod assumenda soluta similique perferendis! Voluptatem ullam atque nobis blanditiis non, dolorum est qui temporibus praesentium quisquam in odit, accusamus culpa quas facilis cupiditate libero vitae voluptatum modi ducimus? Aliquid amet tenetur reprehenderit dolores tempore, eveniet libero mollitia dolore aut at ipsum ipsa iusto quas eum voluptates, iure aperiam placeat. Consectetur, provident maxime porro doloremque corporis reprehenderit exercitationem aliquam dolores ipsam voluptatum veniam nemo commodi. Enim sit iusto nemo at. Sed, expedita quidem.</p>
-    </div>
+
+                <h2>O que um PC GAMER</h2>
+                <p>Embora também possa fazer facilmente todas as coisas que os computadores domésticos padrão podem fazer, como navegar na internet, organizar e editar fotos, acessar redes sociais e muito mais, um <strong>PC Gamer</strong> é muito mais poderoso também para lidar com jogos de grande sucesso, canais de streaming e criação de conteúdo.<br>
+                    <br>
+                
+                    Assim, ele é um computador desktop que consegue rodar todos os jogos da atualidade de maneira decente, com excelentes configurações de hardware e uma boa quantidade mínima de frames por segundo. Para isso, trata-se de uma máquina facilmente atualizável ​​e com espaço para armazenar bastante coisa.</p>
+                <h2>Desempenho, gráficos e inúmeras possibilidades</h2>
+                <p>Se na hora de jogar você se preocupa com desempenho, o <strong>PC Gamer</strong> definitivamente é um bom investimento para se fazer. Afinal, o hardware dentro de um computador pode superar em muito as peças de um console.<br><br>
+                    Como resultado, os jogos no computador podem ser reproduzidos com configurações gráficas definidas para níveis mais altos. Além disso, é possível jogar com um FPS maior, tendo uma jogabilidade mais suave. <br><br>
+                    Dependendo do título, pode-se configurar as teclas de atalho favoritas em todo o teclado para jogar. Além disso, embora algumas pessoas prefiram utilizar teclado e mouse, que são periféricos que oferecem mais controle e precisão, outras podem optar pelo joystick.<br><br>
+                    Você também pode fazer muitas atualizações em um <strong>PC Gamer</strong>. Essas atualizações podem não apenas melhorar os gráficos, mas também expandir seu armazenamento e impulsionar o desempenho geral do hardware.</p>
+
+                <h2>Onde comprar um PC Gamer?</h2>
+                <p>Um <strong>PC Gamer</strong> tem componentes que fornecem potência gráfica extra, permitindo que você jogue até os títulos mais exigentes. E tudo isso, é claro, desfrutando de uma ótima experiência em termos de jogabilidade, com tempo de carregamento muito mais rápido e sem superaquecer a sua máquina.</p>
+                <p>Ou seja, se você quer ter uma experiência de jogo incrível, não existe uma opção melhor que um bom computador. Portanto, adquira um <strong>PC Gamer</strong> na <em>AUTHENTIC GAMES</em>  e tenha uma experiência de jogo imbatível. Confira nossa linha de computadores!</p>
+            </div>
+        </section>
+
+        <section id="produtos-section">
+
+            <div class="produtos">
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+    </main>
+
+    
 
     
 
 
-    <!-- LINK PARA O JS SWIPER -->
+    
     <script src="script.js"></script>
 
    
